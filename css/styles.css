@@ -209,7 +209,7 @@ section {
       text-align: center; } }
 
 .footer_info {
-  font-size: 14px;
+  font-size: 1.2em;
   line-height: 24px;
   letter-spacing: 0.2px;
   color: #0c0c14; }
@@ -219,7 +219,7 @@ section {
     margin-top: 32px; } }
 
 .footer__author-label {
-  font-size: 14px;
+  font-size: 1.2em;
   line-height: 24px;
   letter-spacing: 0.2px;
   color: #7e808f; }
@@ -334,10 +334,10 @@ section {
   font-weight: 600; }
 
 .p {
-  font-size: 14px;
+  font-size: 1.2em;
   line-height: 24px;
   letter-spacing: 0.2px;
-  color: #7e808f; }
+  color: #28282d; }
 
 #nav {
   position: fixed;
@@ -361,6 +361,8 @@ section {
 
 .nav__item {
   margin-right: 50px; }
+  .nav__item:last-of-type {
+    margin-right: 100px; }
 
 .nav__link {
   text-transform: uppercase;
@@ -376,7 +378,7 @@ section {
   display: none;
   position: fixed;
   z-index: 1000;
-  right: 10px;
+  right: 20px;
   top: 10px;
   cursor: pointer; }
   .toggle-btn .bar {
