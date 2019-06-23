@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paweł Zera</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<input type='checkbox' id='toggle' style='display:none;'/>
+<label class='toggle-btn toggle-btn__cross' for='toggle'>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</label>
+<nav id="nav">
+    <ul class="nav__content" id="nav__content">
+        <li class="nav__item"><a href="#about-me" class="nav__link" onclick="myFunction()">o mnie</a></li>
+        <li class="nav__item"><a href="#project" class="nav__link" onclick="myFunction()">portfolio</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link" onclick="myFunction()">kontakt</a></li>
+        <li class="nav__item"><a href="#header" class="nav__link" onclick="myFunction()"><i class="fa fa-home fa-2x"
+                                                                                            aria-hidden="true"></i></a>
+        </li>
+    </ul>
+</nav>
+
+
+<section id="header">
+    <div class="row">
+        <h1 class="header__logo h1">Paweł<br>Zera</h1>
+        <a class="header__jump" href="#about-me"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></a>
+    </div>
+</section>
+
+<section id="about-me">
+
+    <h2 class="h2">O mnie</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="" class="image image--round-corners">
+        </div>
+        <div class="col-6">
+            <div class="about--text">
+                Nazywam się Paweł Zera. Jestem studentem ostatniego roku Informatyki Inżynierskiej Uniwersytetu Śląskiego w Katowicach. Zamiłowanie do IT odkryłem już w gimnazjum, wtedy też po raz pierwszy złożyłem samodzielnie komputer. <br><br> Przygodę z programowaniem rozpocząłem na studiach i jest to dziedzina informatyki, w której chcę się rozwijać i specjalizować. Obecnie tworzę strony we Front-Endzie oraz małe aplikacje na potrzeby wewnętrzene w PHP.
+            </div>
+            <a class="btn btn--primary" href="cv.pdf"><i class="fa fa-file-text-o" aria-hidden="true"></i> CV</a>
+        </div>
+    </div>
+
+</section>
+
+<section id="project">
+
+    <h2 class="h2">Projekty</h2>
+    <div class="row">
+        <div class="col-6 project__tile">
+            <h3 class="project__title h3">Memory test</h3>
+            <img src="img/memory.png" class="image image--project">
+            <p class="project__description">Gra pamięciowa, w której nie tylko liczy się ilość ruchów, ale także czas w
+                którym uda się ukończyć grę</p>
+            <ul class="project__technologies">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JS</li>
+                <li>ES6</li>
+                <li>jQuery</li>
+            </ul>
+            <div class="project__buttons btn-group">
+                <a class="btn btn--primary" href="https://pawelzera.github.io/Gwent-jQ/">podgląd</a>
+                <a class="btn btn--secondary" href="https://github.com/PawelZera/Gwent-jQ"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="col-6 project__tile">
+            <h3 class="project__title h3">Wisielec</h3>
+            <img src="img/wisielec.png" class="image image--project">
+            <p class="project__description">Prosta gra w wisielca, napisana początkowo w js, następnie przekonwertowana
+                na jQuery</p>
+            <ul class="project__technologies">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JS</li>
+                <li>ES6</li>
+                <li>jQuery</li>
+            </ul>
+            <div class="project__buttons btn-group">
+                <a class="btn btn--primary" href="https://pawelzera.github.io/Wisielec-jQ/">podgląd</a>
+                <a class="btn btn--secondary" href="https://github.com/PawelZera/Wisielec-jQ"><i
+                        class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 project__tile">
+            <h3 class="project__title h3">Panakeia</h3>
+            <img src="img/panakeia.png" class="image image--project">
+            <p class="project__description">Strona powstała w ramach nauki metodyki BEM</p>
+            <ul class="project__technologies">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>SASS</li>
+                <li>BEM</li>
+            </ul>
+            <div class="project__buttons btn-group">
+                <a class="btn btn--primary" href="https://pawelzera.github.io/Panakeia/">podgląd</a>
+                <a class="btn btn--secondary" href="https://github.com/PawelZera/Panakeia"><i
+                        class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="col-6 project__tile">
+            <h3 class="project__title h3">Portfolio</h3>
+            <img src="img/portfolio.png" class="image image--project">
+            <p class="project__description">Strona stworzona na potrzeby przedstawienia mojej osoby wraz z tworzonymi projektami</p>
+            <ul class="project__technologies">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>SASS</li>
+                <li>BEM</li>
+            </ul>
+            <div class="project__buttons btn-group">
+                <a class="btn btn--primary" href="https://pawelzera.github.io/">podgląd</a>
+                <a class="btn btn--secondary" href="https://github.com/PawelZera/PawelZera.github.io"><i
+                        class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2 class="h2">Kontakt</h2>
+    <div class="row">
+        <div class="col-12 contact__row">
+            <h4 class="h4">Paweł Zera</h4>
+            <br>
+            <br>
+            <p class="bold">E-mail:</p> pawelzera1@gmail.com</p>
+            <br>
+            <p class="bold">Telefon:</p> 507-197-681</p>
+        </div>
+    </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
