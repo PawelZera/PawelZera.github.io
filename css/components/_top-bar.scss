@@ -1,0 +1,40 @@
+.top-bar {
+	background: $color-white;
+	padding: 12px 0;
+	box-shadow: 0 8px 16px 0 rgba(40, 40, 45, 0.16);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: $z-top-bar;
+	width: 100%;
+	@include max(s) {
+		padding: 4px 0;
+	}
+}
+
+.top-bar__wr {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.top-bar__hamburger {
+	cursor: pointer;
+	display: none;
+	width: 28px;
+	@include max(s) {
+		display: block;
+	}
+}
+
+.top-bar__logo {
+	height: 56px;
+	display: flex;
+	align-items: center;
+}
+
+.top-bar__logo-img {
+	max-height: 54px;
+}

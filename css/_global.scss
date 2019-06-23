@@ -1,0 +1,52 @@
+@import "variables";
+@import "mixins/paddings";
+
+body, a, button, input, label {
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 0.2px;
+}
+
+body {
+	@include max(m) {
+		border-top: 1px solid transparent;
+		margin-top: -1px;
+	}
+	max-width: $breakpoint-xl;
+	margin: 0 auto 30px auto;
+	box-shadow: 0 0 30px $color-primary-dark;
+	@media screen and (max-width: $breakpoint-m) {
+		box-shadow: 0 0 0 $color-primary-dark;
+	}
+}
+section {
+	background-color: white;
+	width: 100%;
+	&:nth-of-type(n+3) {
+		padding-top: 4em;
+	}
+	&:last-of-type {
+		padding-bottom: 4em;
+	}
+
+}
+
+
+*::selection {
+	background: $color-primary;
+	color: $color-white;
+}
+
+*::-moz-selection {
+	background: $color-primary;
+	color: $color-white;
+}
+
+*::selection {
+	background: $color-primary;
+	color: $color-white;
+}
+
+*::-moz-selection {
+	background: $color-primary;
+	color: $color-white;
+}

@@ -1,0 +1,40 @@
+@import "../variables";
+@import "../mixins/texts";
+
+.footer {
+}
+
+.footer__content {
+	border-top: 2px solid $color-grey-3;
+	color: $color-blue-grey-5;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 68px;
+	padding-top: 24px;
+	@include max(xs) {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+.footer_info {
+	@include text-paragraph;
+	color: $color-dark-3;
+
+}
+
+.footer__author {
+	@include max(xs) {
+		margin-top: 32px;
+	}
+}
+
+.footer__author-label {
+	@include text-paragraph;
+	color: $color-blue-grey-5;
+}
+
+.footer__author-logo {
+	vertical-align: middle;
+	margin-left: 4px;
+}

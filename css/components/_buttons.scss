@@ -1,0 +1,62 @@
+@import "../variables";
+@import "../mixins/texts";
+@import "../mixins/hover";
+
+.btn {
+	@include text-button;
+	border-radius: $radius-primary;
+	box-sizing: border-box;
+	cursor: pointer;
+	height: 38px;
+	line-height: 36px;
+	padding: 0 10px;
+	text-transform: uppercase;
+	transition: $transition-button;
+	display: inline-block;
+	margin: auto;
+}
+
+.btn-group {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: -6px;
+	.btn {
+		margin: 6px;
+	}
+}
+
+.btn--primary {
+	background: $color-primary;
+	color: $color-white;
+	@include hover {
+		background: $color-primary-dark;
+	}
+}
+
+.btn--secondary {
+  color: black;
+  transition: $transition-time1 ease;
+  @include hover {
+    color: white;
+    text-shadow: 0 0 10px black;
+  }
+}
+
+.btn--radius {
+	border-radius: 50px;
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+.btn--wide {
+	width: 100%;
+}
+
+.btn__icon {
+	margin-right: 8px;
+	&:last-child {
+		margin-left: 8px;
+		margin-right: 0;
+	}
+}

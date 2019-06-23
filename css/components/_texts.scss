@@ -1,0 +1,56 @@
+@import "../variables";
+@import "../media";
+@import "../mixins/texts";
+
+.h1 {
+	@include text-h1;
+	color: $color-dark-2;
+}
+
+.h1--decor {
+	@include text-h1--decor;
+}
+
+.h2 {
+	@include text-h2;
+	color: $color-dark-2;
+	margin: 0 0 35px 50px;
+	display: inline-block;
+	&:after {
+		content: '';
+		height: 4px;
+		background-color: $color-primary-dark;
+		border-radius: 30%;
+		display: block;
+		transform: translatey(10px);
+	}
+}
+
+.h3 {
+	@include text-h3;
+	color: $color-dark-2;
+	margin: 10px;
+}
+
+.h4 {
+	@include text-h4;
+	color: $color-dark-2;
+	display: inline-block;
+	&:after {
+		content: '';
+		height: 4px;
+		background-color: $color-primary-dark;
+		border-radius: 30%;
+		display: block;
+	}
+}
+
+
+.subtitle {
+	@include text-subtitle;
+}
+
+.p {
+	@include text-paragraph;
+	color: $color-blue-grey-5;
+}
